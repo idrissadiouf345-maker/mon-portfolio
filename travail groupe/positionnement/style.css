@@ -1,0 +1,43 @@
+.boite1{
+    display: none;
+    background: red;
+}
+.grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.carte{
+    background: orange;
+    padding: 20px;
+    text-align: center;
+}
+/* .enfant{
+    position: static; */
+
+/* .enfant{
+    position: relative;
+    top: 20px;
+    left: 30px; */
+
+.parent{
+    position: relative;
+}
+.enfant{
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+}
+.enfant{
+    position: fixed;
+    /* bottom: 20px; */
+    right: 20px;
+}
+.ligne {
+  display: flex;
+  gap: 50px;   /* espace entre les deux phrases */
+}
+.ligne p {
+  border: 1px solid red;   /* on voit exactement la taille de chaque p */
+  padding: 10px;
+}

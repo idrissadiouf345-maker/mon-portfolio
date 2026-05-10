@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    grid-template-columns:120px  ;
+    /* grid-template-rows: ; */
+    gap: 7px;
+    height: 100vh;
+    text-align: center;
+}
+.item{
+    background-color: green;
+    border: 1px solid black;
+}
+.A{
+    grid-column: 1/4;
+}
+.B{
+    grid-row: 2/4;
+}
+.le{
+    grid-column: 2/4;
+}
+.footer{
+    grid-column: 1/4;
+}
