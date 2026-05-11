@@ -1,0 +1,342 @@
+/* ===========================
+   RESET GLOBAL
+   Cible tous les éléments HTML
+   =========================== */
+* {
+  margin: 0;        /* supprime les marges par défaut de tous les éléments */
+  padding: 0;       /* supprime les espacements internes par défaut */
+  box-sizing: border-box; /* le padding et border sont inclus dans la largeur totale */
+  line-height: 1.1; /* hauteur de ligne par défaut pour tout le texte */
+}
+
+/* ===========================
+   BALISE <span>
+   Ex: <span>I</span>Xarala et les pourcentages colorés
+   =========================== */
+span {
+  color: #ff0000; /* colore en rouge tous les <span> par défaut */
+}
+
+/* ===========================
+   TOUTES LES BALISES <ul>
+   Cible les listes nav et .c
+   =========================== */
+ul {
+  list-style: none; /* supprime les puces par défaut de toutes les listes */
+}
+
+/* ===========================
+   LIENS <a> DANS LES <ul>
+   Cible les liens du menu nav
+   =========================== */
+ul a {
+  text-decoration: none; /* supprime le soulignement des liens */
+  color: #000;           /* colore les liens en noir */
+}
+
+/* ===========================
+   BALISE <body>
+   Conteneur principal de toute la page
+   =========================== */
+body {
+  font-family: sans-serif; /* police sans-serif pour toute la page */
+  background: #ffffff;     /* fond blanc */
+  overflow-x: hidden;      /* cache le défilement horizontal si contenu dépasse */
+}
+
+/* ===========================
+   BALISE <nav>
+   Barre de navigation en haut de page
+   =========================== */
+nav {
+  display: flex;              /* place logo, liens et bouton en ligne */
+  justify-content: space-between; /* espace égal entre logo, liens, bouton */
+  align-items: center;        /* aligne verticalement au centre */
+  padding: 1px;               /* petit espace interne */
+  color: #000;
+  margin: 5px;                /* couleur du texte en noir */
+}
+
+/* ===========================
+   <ul class="b">
+   Liste des liens du menu nav
+   =========================== */
+ul.b {
+  display: flex;       /* affiche les <li> en ligne horizontale */
+  gap: 20px;           /* espace de 20px entre chaque lien */
+  margin: 10px;        /* marge autour de la liste */
+  white-space: nowrap; /* empêche les liens de se couper sur plusieurs lignes */
+}
+
+/* ===========================
+   <button class="btn-nav">
+   Bouton "Réserver votre diagnostic"
+   =========================== */
+.btn-nav {
+  padding: 10px; /* espace interne autour du texte du bouton */
+  background: linear-gradient(to right, #F26522,#1A1206); /* dégradé orange → blanc → orange foncé */
+  color: #fff;         /* texte blanc */
+  border: none;        /* supprime la bordure par défaut du bouton */
+  border-radius: 5px;  /* coins arrondis */
+  cursor: pointer;     /* curseur main au survol */
+  white-space: nowrap; /* empêche le texte de se couper */
+  flex-shrink: 0;      /* empêche le bouton de se réduire dans le flex */
+  margin: 5px;         /* petite marge autour du bouton */
+}
+
+/* ===========================
+   <div class="logo">
+   Logo "IXarala" dans le nav
+   =========================== */
+.logo {
+  font-size: 24px;   /* taille du texte du logo */
+  font-weight: bold; /* texte en gras */
+  color: #000;       /* couleur noire */
+}
+
+/* ===========================
+   <div class="ligne">
+   Ligne décorative (si utilisée)
+   =========================== */
+.ligne {
+  width: 100%;   /* prend toute la largeur */
+  height: 3px;   /* ligne fine de 3px */
+  background: linear-gradient(90deg, transparent, #f26522, transparent); /* dégradé transparent → orange → transparent */
+  margin: 10px 0; /* espace au dessus et en dessous */
+}
+
+/* ===========================
+   <div class="wrapper">
+   Conteneur de la section hero avec image de fond
+   =========================== */
+.wrapper {
+  background-image: url('design.png'); /* image de fond */
+  background-size: cover;              /* couvre tout le conteneur */
+  background-repeat: no-repeat;        /* ne se répète pas */
+  background-position: center;         /* centrée */
+}
+
+/* ===========================
+   <div class="hero">
+   Bloc principal du titre hero
+   =========================== */
+.hero {
+  background: #F26522;   /* fond orange */
+  border-radius: 24px;   /* coins très arrondis */
+  margin: 30px 60px;     /* 30px haut/bas, 60px gauche/droite */
+  padding: 20px 40px;    /* espace interne */
+  text-align: center;    /* texte centré */
+}
+
+/* ===========================
+   <h1> DANS .hero
+   Titre principal de la page
+   =========================== */
+.hero h1 {
+  color: #fff;        /* texte blanc */
+  font-size: 1.8rem;  /* taille du titre */
+  line-height: 1.6;   /* espacement entre les lignes du titre */
+}
+
+/* ===========================
+   <span class="highlight-box"> et <span class="days-box">
+   Mots mis en valeur dans le h1
+   =========================== */
+.highlight-box,
+.days-box {
+  background: #1A1206; /* fond marron foncé */
+  color: #fff;         /* texte blanc */
+  border-radius: 6px;  /* coins arrondis */
+  padding: 4px 12px;   /* espace interne autour du mot */
+}
+
+/* ===========================
+   <div class="hero-sub">
+   Sous-titre descriptif sous le h1
+   =========================== */
+.hero-sub {
+  background: rgba(255, 255, 255, 0.15); /* fond blanc semi-transparent */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* bordure blanche légère */
+  border-radius: 10px;  /* coins arrondis */
+  padding: 14px 20px;   /* espace interne */
+  color: #fff;          /* texte blanc */
+  font-size: 0.85rem;   /* texte légèrement petit */
+  max-width: 500px;     /* largeur maximale */
+  margin: 24px auto 0;  /* centré horizontalement, 24px au dessus */
+}
+
+/* ===========================
+   TOUTES LES BALISES <section>
+   Sections "Réalité du marché", "Ce que cela signifie", "Solution"
+   =========================== */
+section {
+  padding: 40px 60px; /* espace interne : 40px haut/bas, 60px gauche/droite */
+}
+
+/* ===========================
+   <h2> DANS <section>
+   Titre "LA RÉALITÉ DU MARCHÉ"
+   =========================== */
+section h2 {
+  font-size: 1.3rem;      /* taille du titre */
+  font-weight: 800;       /* très gras */
+  text-transform: uppercase; /* tout en majuscules */
+  margin-bottom: 24px;    /* espace sous le titre */
+}
+
+/* ===========================
+   <h3> DANS <section>
+   Titre "CE QUE CELA SIGNIFIE POUR VOUS"
+   =========================== */
+section h3 {
+  text-transform: uppercase; /* tout en majuscules */
+}
+
+/* ===========================
+   <div class="container"> et <div class="container1">
+   Conteneurs des sections avec cartes et image côte à côte
+   =========================== */
+.container,
+.container1 {
+  display: flex;         /* place cartes et image en ligne */
+  flex-direction: row;   /* direction horizontale (gauche → droite) */
+  gap: 20px;             /* espace entre les cartes et l'image */
+  align-items: center;   /* aligne verticalement au centre */
+}
+
+/* ===========================
+   <div class="cards"> et <div class="cards1">
+   Colonnes de cartes dans les sections
+   =========================== */
+.cards,
+.cards1 {
+  display: flex;          /* empile les cartes */
+  flex-direction: column; /* direction verticale (haut → bas) */
+  gap: 12px;              /* espace entre chaque carte */
+  flex: 1;                /* prend tout l'espace disponible */
+}
+
+/* ===========================
+   <div class="class">
+   Chaque carte individuelle avec le texte
+   =========================== */
+.class {
+  border: 1.5px solid #f2d0bb; /* bordure orange clair */
+  border-radius: 10px;          /* coins arrondis */
+  padding: 16px 20px;           /* espace interne */
+  font-size: 0.9rem;            /* taille du texte */
+  background: #ffffff;          /* fond blanc */
+}
+
+/* ===========================
+   <div class="side-img-wrapper"> et <div class="side-img-wrapper1">
+   Conteneurs des images homme et femme avec fond décoratif
+   =========================== */
+.side-img-wrapper,
+.side-img-wrapper1 {
+  background-image: url('design.png'); /* image de fond décorative */
+  background-size: cover;              /* couvre tout le conteneur */
+  background-repeat: no-repeat;        /* ne se répète pas */
+  background-position: center;         /* centrée */
+}
+
+/* ===========================
+   <img class="side-img">
+   Image de l'homme dans la 1ère section
+   =========================== */
+.side-img {
+  width: 350px;      /* largeur fixe */
+  object-fit: cover; /* l'image couvre sans se déformer */
+}
+
+/* ===========================
+   <img class="side-img1">
+   Image de la femme dans la 2ème section
+   =========================== */
+.side-img1 {
+  width: 350px;           /* largeur fixe */
+  object-fit: cover;      /* l'image couvre sans se déformer */
+  transform: scaleX(-1);  /* retourne l'image horizontalement (effet miroir) */
+}
+
+/* ===========================
+   <section class="for">
+   Section orange "LA SOLUTION D'CLICK 360"
+   =========================== */
+.for {
+  background: #F26522;  /* fond orange */
+  border-radius: 24px;  /* coins très arrondis */
+  margin: 30px 60px;    /* 30px haut/bas, 60px gauche/droite */
+  padding: 30px;        /* espace interne */
+  padding-right: 0;     /* supprime le padding à droite pour que l'image colle au bord */
+  overflow: hidden;     /* cache ce qui dépasse du conteneur (image) */
+}
+
+/* ===========================
+   <h4> dans .for
+   Titre "LA SOLUTION D'CLICK 360" sur fond sombre
+   =========================== */
+h4 {
+  background: #1A1206; /* fond marron foncé */
+  color: #fff;         /* texte blanc */
+  padding: 15px;       /* espace interne */
+  margin: 25px;        /* espace autour */
+  border-radius: 24px; /* coins très arrondis */
+  text-align: center;  /* texte centré */
+}
+
+/* ===========================
+   <div class="for-content">
+   Carte translucide contenant la liste et l'image
+   =========================== */
+.for-content {
+  background: rgba(255, 255, 255, 0.15); /* fond blanc semi-transparent */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* bordure blanche légère */
+  border-radius: 10px;       /* coins arrondis */
+  padding: 14px 0 14px 20px; /* haut 14px, droite 0, bas 14px, gauche 20px */
+  color: #fff;               /* texte blanc */
+  font-size: 0.85rem;        /* taille du texte */
+  margin: 24px 0 0;          /* 24px au dessus, 0 sur les côtés */
+  display: flex;             /* place liste et image en ligne */
+  align-items: center;       /* aligne verticalement au centre */
+  justify-content: space-between; /* pousse liste à gauche, image à droite */
+  min-height: 180px;         /* hauteur minimale de la carte */
+  font-weight: 600;          /* texte semi-gras */
+  overflow: hidden;          /* cache ce qui dépasse (image) */
+}
+
+/* ===========================
+   <ul class="c">
+   Liste à puces dans .for-content
+   =========================== */
+.c {
+  list-style-type: disc;      /* puces rondes */
+  list-style-position: inside; /* puces à l'intérieur du texte */
+  font-size: 1rem;            /* taille du texte */
+  line-height: 2;             /* espace entre les lignes */
+  flex: 1;                    /* prend tout l'espace disponible */
+  margin: auto;               /* centre le bloc dans l'espace disponible */
+  padding-left: 0;            /* pas de décalage à gauche */
+  text-align: center;         /* centre le texte et les puces */
+}
+
+/* ===========================
+   <div class="img">
+   Conteneur de l'image main.png
+   =========================== */
+.img {
+  flex-shrink: 0;      /* empêche le conteneur de se réduire */
+  display: flex;       /* permet d'aligner l'image */
+  align-items: flex-end; /* aligne l'image en bas du conteneur */
+}
+
+/* ===========================
+   <img class="ben">
+   Image de la main avec ampoule
+   =========================== */
+.ben {
+  width: 180px;        /* largeur de l'image */
+  display: block;      /* supprime l'espace parasite sous l'image */
+  margin-right: 0;     /* collée au bord droit */
+  margin-bottom: -14px; /* dépasse légèrement en bas pour l'effet visuel */
+}
