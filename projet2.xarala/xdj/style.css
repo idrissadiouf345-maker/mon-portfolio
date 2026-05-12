@@ -4,11 +4,16 @@
     line-height: 1.1;
     box-sizing: border-box;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
 body{
     overflow-x: hidden;
 }
 .LA{
-    width: 350px;
+   max-width: 350px;
     object-fit: cover;
 }
 .container,.container1{
@@ -16,6 +21,7 @@ body{
     flex-direction: row;
     gap: 20px;
     align-items: center;
+    width: 100%;
 }
 section h2 {
   font-size: 1.3rem;      
@@ -27,6 +33,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex: 1;
 }
 .class {
   border: 1.5px solid #f2d0bb; 

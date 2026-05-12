@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-columns:10% 70% 20% ;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: 
+    "header header header"
+    "nav Article Aide"
+    "Footer Footer Footer";
+    gap: 7px;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+.item{
+    background-color: rgb(229, 245, 14);
+    border: 1px solid black;
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.Article{
+    grid-area: Article;
+}
+.Aide{
+    grid-area: Aide;
+}
+.Footer{
+    grid-area: Footer;
+}
